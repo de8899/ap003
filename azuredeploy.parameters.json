@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "ad"
+        },
+        "adminPasswordOrKey": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/39871908-78ed-4ef9-adbf-cb5c701334e3/resourceGroups/RG2/providers/Microsoft.KeyVault/vaults/kvault1"
+                },
+                "secretName": "rg2secret"
+            }
+          },
+        "dnsLabelPrefix": {
+            "value": "linux003"
+        }
+    }
+}
