@@ -8,7 +8,7 @@
         "adminPasswordOrKey": {
             "reference": {
                 "keyVault": {
-                "id": "/subscriptions/39871908-78ed-4ef9-adbf-cb5c701334e3/resourceGroups/RG2/providers/Microsoft.KeyVault/vaults/kvault1"
+                "id": "/subscriptions/39871908-78ed-4ef9-adbf-cb5c701334e3/resourceGroups/RG2/providers/Microsoft.KeyVault/vaults/kvault3"
                 },
                 "secretName": "rg2secret"
             }

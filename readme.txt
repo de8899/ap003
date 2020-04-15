@@ -5,5 +5,6 @@ $location = Read-Host -Prompt "Enter the same location that is used for creating
 
 New-AzResourceGroupDeployment `
     -ResourceGroupName RG2 `
-    -TemplateFile ".\template.json" `
-    -TemplateParameterFile ".\parameters.json"
+    -TemplateFile ".\azuredeploy.json" `
+    -TemplateParameterFile ".\azuredeploy.parameters.json" `
+    -location eastus
