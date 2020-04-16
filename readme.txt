@@ -1,6 +1,6 @@
 Deployment commands below:
 
-$location = Read-Host -Prompt "Enter the same location that is used for creating the key vault (i.e. centralus)"
+#$location = Read-Host -Prompt "Enter the same location that is used for creating the key vault (i.e. centralus)"
 
 
 New-AzResourceGroupDeployment `
