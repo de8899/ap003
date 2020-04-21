@@ -98,10 +98,7 @@
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'), parameters('subnetName'))]",
         "osDiskType": "Standard_LRS",
         "subnetAddressPrefix": "10.1.0.0/24",
-        "addressPrefix": "10.1.0.0/16",
-        "linuxConfiguration": {
-            "disablePasswordAuthentication": true
-        }
+        "addressPrefix": "10.1.0.0/16"
     },
     "resources": [
         {
@@ -236,7 +233,7 @@
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPasswordOrKey')]",
                     "linuxConfiguration": {
-                        "disablePasswordAuthentication": true,
+                        "disablePasswordAuthentication": false,
                         "ssh": {
                             "publicKeys": [
                                 {
