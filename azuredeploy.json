@@ -2,9 +2,16 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "vmNameprefix": {
+            "type": "string",
+            "defaultValue": "XX-",
+            "metadata": {
+                "description": "define win or lin."
+            }
+        },
         "vmName": {
             "type": "string",
-            "defaultValue": "simpleLinuxVM",
+            "defaultValue": "[concat(parameters('vmNameprefix'),parameters('dnsLabelPrefix'))]",
             "metadata": {
                 "description": "The name of you Virtual Machine."
             }
@@ -68,7 +75,7 @@
         },
         "virtualNetworkName": {
             "type": "string",
-            "defaultValue": "vNet",
+            "defaultValue": "vNetrg2",
             "metadata": {
                 "description": "Name of the VNET"
             }
@@ -82,7 +89,7 @@
         },
         "networkSecurityGroupName": {
             "type": "string",
-            "defaultValue": "SecGroupNet",
+            "defaultValue": "SecGroupNetrg2",
             "metadata": {
                 "description": "Name of the Network Security Group"
             }

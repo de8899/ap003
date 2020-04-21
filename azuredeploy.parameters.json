@@ -14,7 +14,7 @@
             }
           },
         "dnsLabelPrefix": {
-            "value": "linux003"
+            "value": "a123456"
         }
     }
 }
